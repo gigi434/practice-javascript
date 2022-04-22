@@ -82,3 +82,38 @@
 // 何も入れないとバグが生まれるため、デフォルト引数を設定することができる
 // const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
 // sayHello((name = "じゃけぇ"));
+
+/**
+ * スプレッド構文
+ * ...を配列名の前に記載することで、順番に処理することが可能になる
+ * pythonのrange関数みたいなこと
+ */
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// // 従来
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+// // sumFunc(arr1[0], arr1[1]);
+// sumFunc(...arr1);
+
+// まとめることもできる
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(arr3); 残りは一つの配列として格納される
+
+// 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4]; //スプレッド構文を使用して値のコピーができる
+// console.log(arr6);
+
+// なお、そのまま＝でコピーすると値渡しではなく参照渡しになるためエラーの原因になる
+// const arr7 = arr4;
+// console.log(arr7);
+// arr7[0] = 100;
+// console.log(arr7);
+// console.log(arr4);
+
+// const arr8 = [...arr4, ...arr5];
+// console.log(arr7);
