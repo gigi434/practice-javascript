@@ -17,7 +17,7 @@
  */
 // 従来
 // const func1 = function (str) {
-//   //JSでは関数の返り値をそのまま変数に格納できる
+//   //JSでは関数の返り値をそのまま関数に格納できる
 //   return str;
 // };
 // console.log(func1("func1です"));
@@ -70,3 +70,15 @@
 // const [name, age] = myProfile;
 // const message4 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message4);
+
+/**デフォルト値、引数
+ *
+ */
+// 変数に何も入れず関数を実行すると、変数はundefinedになる。
+// const sayHello = (name) => console.log(`こんにちは！${name}さん！`);
+// sayHello();
+// ＞こんにちは！undefinedさん！
+
+// 何も入れないとバグが生まれるため、デフォルト引数を設定することができる
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+// sayHello((name = "じゃけぇ"));
