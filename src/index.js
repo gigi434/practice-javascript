@@ -117,3 +117,34 @@
 
 // const arr8 = [...arr4, ...arr5];
 // console.log(arr7);
+
+/**
+ * mapやfilterを使用した配列の処理
+ */
+// mapは元となる配列から新しく配列を作るためのメソッドのこと
+// 従来
+// const nameArr = ["田中", "山田", "じゃけぇ"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// mapの使い方
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+// ["田中", "山田", "じゃけぇ"]と配列が生成される
+
+// nameArr.map((name) => console.log(name));
+// 田中
+// 山田
+// じゃけぇ
+
+// filterを使用して奇数の数字を取りだす
+// filterは配列の要素に対して条件の合う要素を取り出す
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+// [1, 3, 5]
